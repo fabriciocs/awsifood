@@ -1,3 +1,14 @@
+# Define the path for the home.scss file
+$homeScssPath = "C:\repos\awsexpert\src\main\webapp\app\modules\home\home.scss"
+
+# Ensure the directory structure exists
+$directoryPath = Split-Path -Path $homeScssPath -Parent
+if (-Not (Test-Path -Path $directoryPath)) {
+    New-Item -ItemType Directory -Path $directoryPath -Force
+}
+
+# Define the content for the home.scss file
+$scssContent = @"
 .home-container {
   text-align: center;
   padding: 20px;
@@ -24,10 +35,16 @@
       padding: 20px;
       width: 30%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
 
       img {
         width: 100px;
         height: auto;
+        margin-bottom: 15px;
       }
 
       h2 {
@@ -59,3 +76,13 @@
     }
   }
 }
+"@
+
+# Write the content to the home.scss file
+Set-Content -Path $homeScssPath -Value $scssContent
+
+# Add changes to git, commit, and push
+cd C:\repos\awsexpert
+git add $homeScssPath
+git commit -m "Add home.scss for styling the Home component"
+git push origin feat/view

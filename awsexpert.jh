@@ -1,0 +1,89 @@
+// JDL for the iFood-like system
+
+application {
+  config {
+    baseName iFoodApp,
+    applicationType gateway,
+    authenticationType jwt,
+    packageName com.ifood.app,
+    databaseType postgresql,
+    prodDatabaseType postgresql,
+    devDatabaseType h2Disk,
+    cacheProvider ehcache,
+    enableHibernateCache true,
+    buildTool maven,
+    clientFramework react,
+    enableSwaggerCodegen true,
+    enableTranslation true,
+    nativeLanguage en,
+    languages [en, es, pt-br]
+  }
+  entities Customer, Restaurant, Menu, Dish, Order, OrderItem, Payment
+}
+
+// Define entities
+entity Customer {
+  name String required,
+  email String required unique,
+  phoneNumber String,
+  address String
+}
+
+entity Restaurant {
+  name String required,
+  location String,
+  rating Double min(0) max(5)
+}
+
+entity Menu {
+  name String required,
+  description String
+}
+
+entity Dish {
+  name String required,
+  price BigDecimal required,
+  description String,
+  spicyLevel Integer
+}
+
+entity Order {
+  orderDate Instant required,
+  status OrderStatus required
+}
+
+entity OrderItem {
+  quantity Integer required,
+  totalPrice BigDecimal required
+}
+
+entity Payment {
+  paymentDate Instant required,
+  amount BigDecimal required,
+  paymentType PaymentType required
+}
+
+// Define relationships
+relationship OneToMany {
+  Customer to Order
+  Restaurant to Menu
+  Menu to Dish
+  Order to OrderItem
+}
+
+// Define enums
+enum OrderStatus {
+  PENDING, COMPLETED, CANCELLED, SHIPPED
+}
+
+enum PaymentType {
+  CREDIT_CARD, DEBIT_CARD, PAYPAL, CASH
+}
+
+// Define DTOs and Services
+dto * with mapstruct
+service * with serviceClass
+
+// Enable pagination where needed
+paginate Order, Dish with pagination
+paginate Customer, Restaurant with infinite-scroll

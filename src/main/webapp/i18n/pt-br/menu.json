@@ -1,0 +1,27 @@
+{
+  "iFoodApp": {
+    "menu": {
+      "home": {
+        "title": "Menus",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Menu",
+        "createOrEditLabel": "Criar ou editar Menu",
+        "notFound": "Nenhum Menu encontrado"
+      },
+      "created": "Um novo Menu foi criado com o identificador {{ param }}",
+      "updated": "Um Menu foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Menu foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Menu {{ id }}?"
+      },
+      "detail": {
+        "title": "Menu"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "dish": "Dish",
+      "restaurant": "Restaurant"
+    }
+  }
+}

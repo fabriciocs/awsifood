@@ -1,0 +1,26 @@
+{
+  "generator-jhipster": {
+    "applicationType": "gateway",
+    "authenticationType": "jwt",
+    "baseName": "iFoodApp",
+    "buildTool": "maven",
+    "cacheProvider": "ehcache",
+    "clientFramework": "react",
+    "databaseType": "postgresql",
+    "devDatabaseType": "h2Disk",
+    "devServerPort": 9060,
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": true,
+    "enableTranslation": true,
+    "entities": ["Customer", "Restaurant", "Menu", "Dish", "Order", "OrderItem", "Payment"],
+    "jhipsterVersion": "8.6.0",
+    "jwtSecretKey": "MTIyODkxYzVjOTljNGI2NjE5MjZhMjQwZWM2OGM5MjA1OGY0MzhmNDUyZDQ0MmE3MGUwM2RmY2NkZDZkYzQ2OTVhNThjYmQzMjM3MjE2MjYyNDMyMTY3OWE1MjZlNTJkMDc3Y2Q2ZWFlMzU4ZTYzYWJhMjcxNTkzNDkwM2RlODA=",
+    "languages": ["en", "es", "pt-br"],
+    "lastLiquibaseTimestamp": 1722647774000,
+    "nativeLanguage": "en",
+    "packageFolder": "com/ifood/app",
+    "packageName": "com.ifood.app",
+    "prodDatabaseType": "postgresql",
+    "reactive": true
+  }
+}

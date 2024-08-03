@@ -1,0 +1,38 @@
+{
+  "annotations": {
+    "changelogDate": "20240803011214"
+  },
+  "applications": ["iFoodApp"],
+  "databaseType": "postgresql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Menu",
+  "relationships": [
+    {
+      "otherEntityName": "dish",
+      "otherEntityRelationshipName": "menu",
+      "relationshipName": "dish",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "restaurant",
+      "otherEntityRelationshipName": "menu",
+      "relationshipName": "restaurant",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

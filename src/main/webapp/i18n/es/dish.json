@@ -1,0 +1,28 @@
+{
+  "iFoodApp": {
+    "dish": {
+      "home": {
+        "title": "Dishes",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Dish",
+        "createOrEditLabel": "Crear o editar Dish",
+        "notFound": "Ningún Dishes encontrado"
+      },
+      "created": "Un nuevo Dish ha sido creado con el identificador {{ param }}",
+      "updated": "Un Dish ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Dish ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Dish {{ id }}?"
+      },
+      "detail": {
+        "title": "Dish"
+      },
+      "id": "ID",
+      "name": "Name",
+      "price": "Price",
+      "description": "Description",
+      "spicyLevel": "Spicy Level",
+      "menu": "Menu"
+    }
+  }
+}

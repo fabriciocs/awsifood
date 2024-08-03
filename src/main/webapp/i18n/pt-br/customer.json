@@ -1,0 +1,28 @@
+{
+  "iFoodApp": {
+    "customer": {
+      "home": {
+        "title": "Customers",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Customer",
+        "createOrEditLabel": "Criar ou editar Customer",
+        "notFound": "Nenhum Customer encontrado"
+      },
+      "created": "Um novo Customer foi criado com o identificador {{ param }}",
+      "updated": "Um Customer foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Customer foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Customer {{ id }}?"
+      },
+      "detail": {
+        "title": "Customer"
+      },
+      "id": "ID",
+      "name": "Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "address": "Address",
+      "order": "Order"
+    }
+  }
+}

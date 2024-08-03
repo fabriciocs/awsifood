@@ -1,0 +1,27 @@
+{
+  "iFoodApp": {
+    "order": {
+      "home": {
+        "title": "Orders",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Order",
+        "createOrEditLabel": "Criar ou editar Order",
+        "notFound": "Nenhum Order encontrado"
+      },
+      "created": "Um novo Order foi criado com o identificador {{ param }}",
+      "updated": "Um Order foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Order foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Order {{ id }}?"
+      },
+      "detail": {
+        "title": "Order"
+      },
+      "id": "ID",
+      "orderDate": "Order Date",
+      "status": "Status",
+      "orderItem": "Order Item",
+      "customer": "Customer"
+    }
+  }
+}

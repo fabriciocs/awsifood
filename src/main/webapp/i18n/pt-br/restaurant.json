@@ -1,0 +1,27 @@
+{
+  "iFoodApp": {
+    "restaurant": {
+      "home": {
+        "title": "Restaurants",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Restaurant",
+        "createOrEditLabel": "Criar ou editar Restaurant",
+        "notFound": "Nenhum Restaurant encontrado"
+      },
+      "created": "Um novo Restaurant foi criado com o identificador {{ param }}",
+      "updated": "Um Restaurant foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Restaurant foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Restaurant {{ id }}?"
+      },
+      "detail": {
+        "title": "Restaurant"
+      },
+      "id": "ID",
+      "name": "Name",
+      "location": "Location",
+      "rating": "Rating",
+      "menu": "Menu"
+    }
+  }
+}

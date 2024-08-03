@@ -1,0 +1,41 @@
+{
+  "annotations": {
+    "changelogDate": "20240803011314"
+  },
+  "applications": ["iFoodApp"],
+  "databaseType": "postgresql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "spicyLevel",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Dish",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "menu",
+      "otherEntityRelationshipName": "dish",
+      "relationshipName": "menu",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

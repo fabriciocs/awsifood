@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20240803011614"
+  },
+  "applications": ["iFoodApp"],
+  "databaseType": "postgresql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "paymentDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "paymentType",
+      "fieldType": "PaymentType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "CREDIT_CARD,DEBIT_CARD,PAYPAL,CASH"
+    }
+  ],
+  "name": "Payment",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

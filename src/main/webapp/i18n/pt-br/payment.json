@@ -1,0 +1,26 @@
+{
+  "iFoodApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Payment",
+        "createOrEditLabel": "Criar ou editar Payment",
+        "notFound": "Nenhum Payment encontrado"
+      },
+      "created": "Um novo Payment foi criado com o identificador {{ param }}",
+      "updated": "Um Payment foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Payment foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "id": "ID",
+      "paymentDate": "Payment Date",
+      "amount": "Amount",
+      "paymentType": "Payment Type"
+    }
+  }
+}
